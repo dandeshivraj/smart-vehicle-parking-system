@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Exit</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand">🚘 Vehicle Exit</span>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="card shadow mx-auto" style="max-width: 400px;">
+    <div class="card-body text-center">
+
+      <input type="text" id="exitVehicle" class="form-control mb-2" placeholder="Vehicle Number">
+      <div id="exitError" class="text-danger mb-2"></div>
+
+      <button class="btn btn-success w-100" onclick="exitVehicle()">Exit & Calculate Fee</button>
+
+      <p id="fee" class="mt-3 fw-bold"></p>
+
+      <a href="dashboard.html" class="btn btn-link mt-3">⬅ Back to Dashboard</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
